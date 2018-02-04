@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#548bea"
+    android:orientation="vertical"
+    tools:context="andromeda.petrochemical.LoginPage"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="2dp"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/nameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pswrd_email_height"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/pswrd_emailMargin_leftRight"
+        android:layout_marginTop="@dimen/email_marginTop"
+        android:background="#6299f6"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:ems="10"
+        android:hint="  Email"
+        android:textSize="@dimen/pswrd_emailTextSize"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/password_main_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pswrd_email_height"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_below="@+id/nameLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pswrd_marginTop"
+        android:layout_marginLeft="@dimen/pswrd_emailMargin_leftRight"
+        android:background="#6299f6"
+        android:ems="10"
+        android:hint=" Password"
+        android:textSize="@dimen/pswrd_emailTextSize"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/Loginlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_main_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/LoginBtn_margintop"
+        android:layout_marginBottom="@dimen/LoginBtn_marginBtm"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Loginlogin"
+        android:layout_marginTop="@dimen/linearLay_marginTop"
+        android:alpha="0.5"
+        android:gravity="center_horizontal">
+
+        <View
+            android:layout_width="@dimen/ORwidth"
+            android:layout_height="@dimen/ORheight"
+            android:layout_gravity="center"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/ORmargin_endStart"
+            android:layout_marginStart="@dimen/ORmargin_endStart"
+            android:text="OR"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="@dimen/ORwidth"
+            android:layout_height="@dimen/ORheight"
+            android:layout_gravity="center"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/G_marginTop"
+        android:onClick="signIn"
+        android:textAlignment="center" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebookloginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sign_in_button_google"
+        android:layout_marginLeft="@dimen/FB_marginRightLeft"
+        android:layout_marginRight="@dimen/FB_marginRightLeft"
+        android:layout_marginTop="@dimen/FB_marginTop"
+        android:paddingBottom="@dimen/FB_paddingTopBottom"
+        android:paddingLeft="@dimen/FB_marginLeft"
+        android:paddingTop="@dimen/FB_paddingTopBottom"
+        android:textAlignment="center"
+        android:textSize="@dimen/FB_login_textSize">
+
+    </com.facebook.login.widget.LoginButton>
+
+</RelativeLayout>

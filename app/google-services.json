@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "825561809465",
+    "firebase_url": "https://petrochemical-d8dc1.firebaseio.com",
+    "project_id": "petrochemical-d8dc1",
+    "storage_bucket": "petrochemical-d8dc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825561809465:android:9f2e3eb2d119a0c0",
+        "android_client_info": {
+          "package_name": "andromeda.petrochemical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825561809465-u1ms131lde9ga5oqg2ctias16j1ga8mt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "andromeda.petrochemical",
+            "certificate_hash": "85150086cd2f04f220d4f69ada5b7df9eafc9bd3"
+          }
+        },
+        {
+          "client_id": "825561809465-bh5mjtq6k6gsgb71s4m7uoht1biumm4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfzYeAYFBs8rFTd98Z_CyAeyETIpkT_JQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825561809465-bh5mjtq6k6gsgb71s4m7uoht1biumm4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
